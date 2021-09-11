@@ -24,7 +24,7 @@ public:
 
     /* --------------- Definition --------------- */
     template <typename F, typename... Args>
-    auto submit(F &&pri_func, Args &&...args) -> std::future<decltype(pri_func(args...))> {
+    auto submit(F&& pri_func, Args&&... args) -> std::future<decltype(pri_func(args...))> {
         // Create a function with bounded parameter ready to execute
         std::function<decltype(pri_func(args...))()> func = std::bind(std::forward<F>(pri_func), std::forward<Args>(args)...);
 
