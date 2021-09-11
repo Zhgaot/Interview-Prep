@@ -1,7 +1,6 @@
 #pragma once
 
 #include <mutex>
-#include <queue>
 #include <future>
 #include <thread>
 #include <utility>
@@ -23,6 +22,7 @@ public:
     void init();
     void shutdown();
 
+    /* --------------- Definition --------------- */
     template <typename F, typename... Args>
     auto submit(F &&pri_func, Args &&...args) -> std::future<decltype(pri_func(args...))> {
         // Create a function with bounded parameter ready to execute
@@ -45,6 +45,7 @@ public:
 
         return task_ptr->get_future();
     }
+    /* --------------- Definition --------------- */
 
 private:
     class ThreadWorker;
@@ -56,6 +57,8 @@ private:
     std::mutex condition_mutex_;  // mutex for condition variable
     std::condition_variable condition_;  // condition variable
 };
+/* --------------- Declaration --------------- */
+
 
 /* --------------- Definition --------------- */
 class ThreadPool::ThreadWorker{
@@ -104,5 +107,5 @@ inline void ThreadPool::shutdown() {
         }
     }
 }
-
+/* --------------- Definition --------------- */
 }
