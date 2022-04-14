@@ -1,0 +1,1 @@
+/usr/bin/g++   -Wall -std=c++11  -rdynamic CMakeFiles/atoi_test.dir/atoi_test.cpp.o  -o ../bin/atoi_test  -L/root/CppSpace/Interview-Prep/state_mechine/lib -Wl,-rpath,/root/CppSpace/Interview-Prep/state_mechine/lib ../lib/libatoi.so 

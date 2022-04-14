@@ -1,0 +1,4 @@
+/root/CppSpace/Interview-Prep/state_mechine/build/CMakeFiles/rebuild_cache.dir
+/root/CppSpace/Interview-Prep/state_mechine/build/CMakeFiles/edit_cache.dir
+/root/CppSpace/Interview-Prep/state_mechine/build/CMakeFiles/atoi_test.dir
+/root/CppSpace/Interview-Prep/state_mechine/build/CMakeFiles/atoi.dir

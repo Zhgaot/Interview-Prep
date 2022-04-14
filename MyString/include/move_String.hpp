@@ -58,6 +58,7 @@ MoveString &MoveString::operator=(const MoveString &other) {
     this->m_str_ = nullptr;
   }
   this->set_str_(other.m_str_);
+  return *this;
 }
 
 // move assignment

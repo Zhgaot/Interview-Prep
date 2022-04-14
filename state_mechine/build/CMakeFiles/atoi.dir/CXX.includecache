@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/atoi.h
+vector
+-
+string
+-
+algorithm
+-
+unordered_map
+-
+cctype
+-
+limits.h
+-
+
+/root/CppSpace/Interview-Prep/state_mechine/src/atoi.cpp
+atoi.h
+/root/CppSpace/Interview-Prep/state_mechine/src/atoi.h
+
